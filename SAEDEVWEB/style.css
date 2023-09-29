@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0; 
+    padding: 0;
+    font-family:'Montserrat', sans-serif;
+    
+} 
+header h2{
+    text-align: center;    
+}
+body h1{
+    text-align: center; 
+}
+nav{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000   ;  
+    background-color: #ade8f4;
+    color: #ade8f4;
+}
+nav h1{
+    color: #000;
+    font-family: 'Playfair Display', sans-serif;/*pour la police*/
+    font-size: 30px;
+
+}
+
+
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px ;
+
+}
+nav .onglets a{
+    color: #000;
+    font-family: 'Playfair Display', sans-serif;/*pour la police*/
+    font-size: 22px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    
+    margin-right: 10px;
+    align-items: center;
+
+
+}
+.taches{
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+.taches td,.taches tr{
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 100px;
+    margin-right: 600px;
+}
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 400px;
+}
+.main .content .card{
+    display: flex; /*pour mettre la map en face du texte*/
+    /*flex-wrap: wrap;   pour la version mobile*/
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.main .content .card .right{
+    margin-top: 5px; /*pour mettre un espace entre le texte et la map pour la version mobile*/
+    flex: 0 0 60%;
+    
+}
+
+.jb{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    background-color: #DFECF0;
+    padding: 13px;
+}
+
+.main .content .card .left{
+    flex-wrap: wrap;
+    margin-top: 5px;
+    flex: 0 0 40%;
+    background-color: #DFECF0;
+
+    
+}
+.maind{ /*maind pour le deusieme div*/
+    margin-top: 40px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 650px;
+}
+.maind .content .card .left{
+    margin-top: 5px; /*pour mettre un espace entre le texte et la map pour la version mobile*/
+    flex: 0 0 60%;
+    
+    
+}
+.maind .content .card .right{
+    flex-wrap: wrap;
+    margin-top: 5px;
+    flex: 0 0 40%;
+    background-color: #DFECF0;
+    
+}
+.maind .content .card{
+    display: flex; /*pour mettre la map en face du texte*/
+    /*flex-wrap: wrap;   pour la version mobile*/
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+footer{
+    margin-top: 40px; /*pour le séparer du haut*/
+    border-top: 3px solid #000;/*bordure pour le délimiter par rapport au reste */
+    background-color: #ade8f4; /*pour modifier la couleur de fond du footer*/
+    padding: 20px 100px; /*pour mettre une marge sur les cotés */   
+    
+    
+}
+footer h1{
+    font-family: 'Playfair Display', sans-serif;/*pour la police*/
+    border-bottom: 1px solid #000;/*pour surligner le titre du footer*/
+    width: 15%; /*pour redimensioner le surlignage*/
+    padding-bottom: 5px; /*pour mettre un espace entre la ligne et le texte */
+    font-size: 25px;
+    
+}
+footer h2{
+    font-family: 'Playfair Display', sans-serif;
+    
+}
+
+footer .eleves{
+    margin-top: 1%; /*pour raprocher les textes*/
+    flex-wrap: wrap; /*pour concerver la mis en forme en version mobile*/
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+table{
+    margin: auto;
+}
+td{
+    text-align: center;
+}
+footer .groupe{
+    font-size: 18px;
+    text-align: center;
+    
+}
+footer .copyright{
+    text-align: center;
+    text-decoration: underline;
+}
+.audio{
+    margin-left: 800px;
+}
+.arrow{
+    padding-top: 20px;
+    border: 5px solid;
+    border-radius: 18px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;    
+    background: #ff8989;
+    
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    border-bottom: 20px solid #ade8f4;
+    border-top: 20px solid #ade8f4;
+    border-left: 20px solid #ade8f4;
+    border-right: 20px solid #ade8f4;
+    flex-wrap: wrap;
+}
+.arrow .p{
+    opacity: 50%;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-style: italic;  
+    text-justify:auto;
+    flex-wrap: wrap;
+    
+}
+.arrow .h2{
+    text-align: center;
+    font-style: italic;
+    opacity: 50%;
+    flex-wrap: wrap;
+}
+.infobule {
+    position: relative;  /*les .picto-item deviennent référents*/
+    cursor: help;
+    border-radius: 50%;
+    
+  }
+  
+  /* on génère un élément :after lors du survol et du focus :*/
+  
+  .infobule:hover:after,
+  .infobule:focus:after {
+    content: attr(aria-label);  /* on affiche aria-label */
+    position: absolute;
+    top: -2.4em;
+    left: 50%;
+    transform: translateX(-50%); /* on centre horizontalement  */
+    z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+    white-space: nowrap;  /* on interdit le retour à la ligne*/
+    padding: 5px 14px;
+    background: #ade8f4;
+    color: #000;
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+  
+  /* on génère un second élément en :before pour la flèche */
+  
+  [aria-label]:hover:before,
+  [aria-label]:focus:before {
+    content: "▼";
+    position: absolute;
+    top: -1em;
+    left: 50%;
+    transform: translateX(-50%); /* on centre horizontalement  */
+    font-size: 20px;
+    color: #ade8f4;
+  }
+  
+  /* pas de contour durant le :focus */
+  [aria-label]:focus {
+    outline: none;
+  }
+  .ancre{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 12px;
+    bottom: 20px;
+    cursor: pointer;
+    background-color: #82dbec;
+  }
+  .icone{
+    width: 30px;
+    margin-left: 15px;
+  }
+  .ancre2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 12px;
+    top: 110px;
+    cursor: pointer;
+    background-color: #82dbec;
+  }
+  #phone{
+    background-image: url(phone-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 0 1px;
+    padding-left: 25px;
+    line-height: 20px;
+    list-style-type: none;
+  }
+@media screen and (max-width:680px){ /*pour la version mobile*/
+    body{
+        aspect-ratio: auto;
+    }
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .main .card{
+        margin: 10px;
+    }
+    .right{
+        aspect-ratio: auto;
+        
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+        
+        
+    }
+    .arrow .p{
+        height: 200px;
+        width: 100%
+        
+        
+    }
+    .jb {
+        
+        
+    }
+}
+
